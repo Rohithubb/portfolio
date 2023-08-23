@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -26,8 +26,10 @@ body {
 
 nav {
     display: flex;
-    align-items: center; /* top to bottom */
-    justify-content: space-between; /* left to  right */
+    align-items: center;
+    /* top to bottom */
+    justify-content: space-between;
+    /* left to  right */
     flex-wrap: wrap;
 }
 
@@ -59,78 +61,101 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
-.logo h1 span{
+.logo h1 span {
     color: #ff004f;
 }
 
 .header-text {
-    margin-top: 15%;
+    margin-top: 7%;
     font-size: 30px;
     display: flex;
-    align-items: center; /* top to bottom */
-    
+    align-items: center;
+    /* top to bottom */
+
 }
 
-.header-text img{
-    margin-left: 30%;
-    /* padding-left: 41px; */
-    
+.header-text img {
+    margin-left: 90px;
+    width: 480px;
+
 }
 
-.header-text h1{
+.header-text h1 {
     /* margin-top: 10px; */
-    font-size: 40px;
+    font-size: 45px;
+    width: 500px;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: #ff004f;
+}
+
+.header-text p {
+    /* margin-top: 10px; */
+    font-size: 30px;
+}
+
+.btn.btn1 {
+    display: inline-block;
+    background: #ff004f;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.btn.btn1:hover {
+    background: #f23571;
 }
 
 /* ---------about---------- */
 
-#about{
+#about {
     padding: 0px 0;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
 }
 
-.tab-title{
-    display: flex;
-    margin: 20px 0 40px;
+.sub-para {
+    font-size: 18px;
 }
 
-.tab-links{
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+    /* font-size: 55px; */
+}
+
+.tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -141,7 +166,7 @@ nav ul li a:hover:after {
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
@@ -149,40 +174,41 @@ nav ul li a:hover:after {
     width: 100%;
 } */
 
-
-
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    /* font-size: 20px; */
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     /* color: #ff004f; */
     font-size: 14px;
+    font-size: 20px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
+
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 /* ----------- services------------ */
-#services{
+#services {
     padding: 30px 0;
-    
+
 }
 
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
+.services-list div {
     background: #262626;
     padding: 20px;
     font-size: 13px;
@@ -191,18 +217,18 @@ nav ul li a:hover:after {
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.services-list div h2{
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.services-list div a{
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
@@ -211,41 +237,41 @@ nav ul li a:hover:after {
     font-weight: 700;
 }
 
-.services-list div a:hover{
+.services-list div a:hover {
     text-decoration: underline;
 }
 
-.services-list div:hover{
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
 
 /* ---------portfolio--------- */
-#portfolio  {
-    padding: 50px 0;
+#portfolio {
+    padding: 10px 0;
 }
 
-.work-list{
+.work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.work{
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 20px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0%;
     background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
@@ -264,12 +290,13 @@ nav ul li a:hover:after {
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     margin-bottom: 20px;
     font-weight: 600;
+    font-size: 25px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -282,15 +309,15 @@ nav ul li a:hover:after {
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -302,63 +329,55 @@ nav ul li a:hover:after {
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff004f;
 }
 
 /* ---------contact----------- */
 
-.contect-left{
+.contect-left {
     flex-basis: 35%;
 }
 
 
-.contect-left p{
+.contect-left p {
     margin-top: 30px;
 }
 
-.contect-left p i{
+.contect-left p i {
     color: #fff;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
-        font-size: 30px;
-        margin-right: 15px;
-        color: #ababab;
-        display: inline-block;
-        transition: transform 0.5s;
-    }
-    
-    .social-icons a:hover{
-        color: #ff004f;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
     transform: translateY(-5px);
 }
 
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-}
-
-.btn.btn2:hover{
-    background: #f23571;
-}
-
-.contect-right{
+.contect-right {
     flex-basis: 60%;
 }
 
-.contect-right form{
+.contect-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -369,13 +388,27 @@ form input, form textarea{
     font-size: 18px;
 }
 
-form .btn2{
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
-    margin-top: 20%;cursor: pointer;
+    margin-top: 7%;
+    cursor: pointer;
 }
 
-.copyright{
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.btn.btn2:hover {
+    background: #f23571;
+}
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 5px 0;
@@ -384,36 +417,136 @@ form .btn2{
     margin-top: 0px;
 }
 
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
+
 /* -------- css for small screen --------- */
 
 @media only screen and (max-width: 600px) {
-    
-    .header-text{
-        margin-top: 50px;
+
+    .header-text {
+        margin-top: 80px;
         font-size: 16px;
         display: inline-block;
     }
 
-    .header-text img{
-        margin-left: -2px;
-        width: 100%;
+    .header-text h1 {
+        font-size: 27px;
+        width: 291px;
         flex-basis: 100%;
-        margin-top: 80px;
+        margin-bottom: 10px;
     }
 
-    nav{
+    .header-text p {
+        font-size: 22px;
+    }
+
+    .btn.btn1 {
+        display: inline-block;
+        background: rgb(255, 0, 79);
+        padding: 10px;
+        font-size: 15px;
+        margin: 25px 0;
+    }
+
+    .header-text img {
+        margin-left: 0px;
+        width: 100%;
+        /* flex-basis: 100%; */
+        margin-top: 40px;
+        /* margin-bottom: 20px; */
+    }
+
+    /* ----------- about ---------- */
+
+    .about-col-1 img {
+        width: 100%;
+        border-radius: 15px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    
+    .sub-title {
+        /* margin: -25px 0px; */
+    }
+
+    .about-col-1 {
+        margin-bottom: 10px;
+    }
+    
+    .about-col-2 {
+        font-size: 14px;
+        /* margin-bottom: 20px; */
+    }
+
+    .sub-para {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    #services {
+        margin-bottom: -35px;
+    }
+
+    .services-list {
+        display: inline-block;
+        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+        grid-gap: 40px;
+        margin-top: 25px;
+
+    }
+
+    .work img {
+        margin-bottom: 40px;    
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
+    .btn {
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 30px;
+        width: fit-content;
+        border: 1px solid rgb(255, 0, 79);
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: background 0.5s ease 0s;
+    }
+
+    .btn.btn2 {
+        display: inline-block;
+        background: rgb(255, 0, 79);
+        padding: 12px;
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: 10px;
+        /* margin-bottom: 10px; */
+    }
+
+    .copyright {
+        margin-top: 0px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    nav {
         margin-top: 17px;
     }
 
-    nav .fa-solid{
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
 
-    nav ul{
+    
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -425,95 +558,74 @@ nav .fa-solid{
         z-index: 2;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
     }
 
-    nav ul .fa-solid{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
 
-    .services-list div h2{
+    .services-list div h2 {
         font-size: 10px;
         font-weight: 500;
         margin-bottom: 10px;
     }
 
-    .sub-title{
-        font-size: 40px;
-    }
-
-    .about-col-1,.about-col-2{
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-
-    .about-col-2{
-        font-size: 14px;
-    }
+    
 
     .tab-title {
         display: flex;
         margin: 20px 0px 30px 10px;
-        /* align-items: center; */
-        /* text-align: center; */
         justify-content: center;
     }
 
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
+        font-size: 25px;
     }
 
-    .services-list{
-        display: inline-block;
-        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-        grid-gap: 40px;
-        margin-top: 50px;
-
-    }
     
-    .services-list div{
+
+    .services-list div {
         background: #262626;
         padding: 20px;
         font-size: 13px;
-        font-weight: 300;
+        font-weight: 300px;
         border-radius: 20px;
         transition: background 0.5s, transform 0.5s;
         margin-bottom: 30px;
+        /* margin-top: -30px; */
     }
 
-    .work-list{
+    .work-list {
         display: inline-block;
         grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
         grid-gap: 40px;
         margin-top: 50px;
     }
 
-    .work img{
-        margin-bottom: 40px;
-        width: 100%;
-        border-radius: 20px;
-        display: block;
-        transition: transform 0.5s;
-    }
+    
 
-    .contect-left{
+    .contect-left {
         flex-basis: 100%;
     }
 
-    .contect-right{
+    .contect-right {
         flex-basis: 100%;
     }
 
-    form input, form textarea{
+    form input,
+    form textarea {
         width: 100%;
         border: 0;
         outline: none;
@@ -526,22 +638,9 @@ nav .fa-solid{
     }
 }
 
-#msg{
+#msg {
     color: #61b752;
     margin-top: -45px;
     margin-bottom: 25px;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
